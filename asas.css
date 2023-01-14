@@ -1,0 +1,80 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.sect1{
+    height: 70vh;
+    background-color: black;
+}
+.container{
+    width: 95%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.cards{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    height: 70vh;
+    row-gap: 20px;
+    column-gap: 15px;
+}
+.card{
+     
+    height: 60vh;
+}
+.top{
+   font-size: 26px;
+   color: white;
+   margin-left: 10px;
+   padding-top: 10px;
+}
+.top span{
+    font-size: 35px;
+    color: grey;
+    margin: 7px;
+}
+.card p{
+    font-size: 20px;
+    color: white;
+    margin-left: 20px;
+    padding-top: 10px;
+}
+.links{
+   padding-top: 10px;
+   margin-left: 20px;
+   
+}
+.links a{
+   color: #8c8c8c; 
+   font-size: 20px;
+}
+.btn{
+   background-color: transparent;
+   color: white;
+   padding-top: 10px;
+   
+}
+.btn span{
+    color: white;
+    font-size: 20px;
+    margin-left: 15px;
+}
+.btn span:nth-child(1){
+    font-size: 20px;
+    color: white;
+}
+#icon{
+    transition: .5s;
+}
+.btn:hover #icon{
+   transition: 0.5s;
+   transform: translateX(10px);
+}
+@media (max-width: 700px) and (min-width: 600px){
+    .links a{
+        font-size: 15px;
+        color: blue;
+
+    }
+}

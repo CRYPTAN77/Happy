@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.nav{
+    height: 13vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.container{
+    width: 90%;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+.logo{
+    font-size: 37px;
+    font-weight: 600;  
+    color: black;
+}
+.menus{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+.menus li{
+    font-size: 17px;
+    font-weight: 400;
+}
+.menus a{
+    text-decoration: none;
+    margin: 8px;
+}
+.btn{
+    font-size: 17px;
+    padding: 7px 10px;
+    background-color: black;
+    color: white;
+    margin-left: 15px;  
+   
+}
+#icon{
+    padding: 0 20px;
+    font-size: 23px;
+    margin-right: 15px;
+    opacity: 0;
+}
+#bar{
+    display: none;   
+}
+.right{
+    display: flex;
+    align-items: center;
+}
+@media (max-width: 941px) and (min-width: 600px){
+    .menus{
+        bottom: 0;
+        left: -100%;
+        height: 87vh;
+        width: 100%;
+        transition: 0.5s;
+        position: absolute;
+        display: block !important;
+       justify-content: center;
+       text-align: center;
+       background-color: red;
+        
+    }
+   #bar:checked + .menus{
+    
+   bottom: 0;
+   left: 0;
+   content: "";
+   transition: 0.5s;
+   position: absolute;
+   }
+   #bar{
+    display: none;
+   }
+   .menus li{
+    margin: 20px 0;
+   }
+   #icon{
+    opacity: 1;
+   }
+}
+.sect1{
+   height: 100vh;
+} 
+.main{
+    height: 100vh;
+    display: flex;
+    background-color: #eeeeee;
+}
+.left{
+    flex: 1; 
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.left h1{
+    color: rgb(0, 0, 0);
+    font-size: 52px; 
+}
+
+.left p{
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    padding: 20px 0;
+}
+.right1{
+    flex: 1; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.right1 img{
+    width: 80%;
+}
+.btns{
+    display: flex;
+    align-items: center;
+}
+.btns button:nth-child(1){
+    background-color:red;
+    padding: 15px 26px;
+    border: none;
+    border-radius: 20px;
+    margin-right: 15px;
+}
+.btns button:nth-child(2){
+    padding: 15px 15px;
+    border: none;
+    border-radius: 20px;
+    margin-right: 15px;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+}
+#icons{
+    font-size: 20px;
+    color: red;
+    margin-right: 10px;
+}
+@media (max-width: 900px) and (min-width: 600px){
+    .main{
+        height: auto !important;
+       
+        padding: 30px 0;
+        flex-direction: column-reverse !important;
+    }
+    .left h1{
+        font-size:30px;
+    }
+    .left p{
+        font: 5px;
+    }
+    .left{
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        justify-content: center;  
+    }
+    .right1 img {
+     width: 20%;
+    }
+
+}
+.sect2{
+    height: 127vh;
+    background-color:  #eeeeee;
+}
+.cards{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 10px;
+    row-gap: 10px;
+}
+.card{
+    height: 350px;
+    width: 400px;
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.card img{
+    object-fit: cover;
+    width: 250px;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card h4{
+    color: black;
+    font-size: 22px;
+    margin: 0 0 5px;
+}
+.card p{
+    color: #9797a4;
+    font-size: 16px;
+}
+.dollar{
+    color: #ce1212;
+    font-size: 24px;
+}
+
+.boxes{
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    flex-direction: column;
+}
+.boxes h3{
+    font-size: 12px;
+    color: rgba(165, 165, 165, 0.808);
+    font-weight: 300;
+}
+.boxes h2{
+    font-family: 'Amatic SC', cursive;
+    font-size: 50px;
+    margin-top: 10px;
+}
+.boxes h2 span{
+    font-family: 'Amatic SC', cursive;
+    font-size: 50px;
+    font-weight: 500;
+    color: red;
+   
+}
+.boxslis a{
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+    margin-right: 20px;
+    font-size: 20px;
+
+}
+.boxslis{
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.boxes h1{
+    font-size: 27px;
+    color: red;
+}
+
+
+
+
+
+
+

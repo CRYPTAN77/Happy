@@ -1,0 +1,64 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.modal{
+   position: fixed;
+   right: 0;
+   top: 0;
+   left: 0;
+   bottom: 0;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   visibility: hidden;
+   opacity: 0;
+}
+.card{
+    height: 400px;
+    width: 30%;
+    
+    position: relative;
+}
+#check:checked +.modal{
+    visibility: visible;
+    opacity: 1;
+}
+h1{
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    z-index: 2;
+    top: 10%;
+    color: rgb(255, 0, 0);
+}
+p{
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    z-index: 2;
+    top: 20%;
+    color: rgb(255, 0, 0);
+}
+label{
+    padding: 0 20px;
+    top: 55%;
+    position: absolute;
+    font-size: 30px;
+    color: rgb(255, 0, 0);
+  
+}
+.modal img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    position: absolute; 
+}
+#modal{
+    display: none;
+}
